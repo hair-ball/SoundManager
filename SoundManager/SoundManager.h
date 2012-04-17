@@ -2,7 +2,7 @@
 //  SoundManager.h
 //  SoundManager
 //
-//  Created by 涛 魏 on 12-2-20.
+//  Created by undancer on 12-2-20.
 //  Copyright (c) 2012年 北京. All rights reserved.
 //
 
