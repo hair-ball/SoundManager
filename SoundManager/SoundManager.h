@@ -9,15 +9,17 @@
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
 
+BOOL playWithData(NSData* data);
+
 @interface SoundManager : NSObject<AVAudioPlayerDelegate>
 
 @property (nonatomic, retain) AVAudioPlayer* player;
-
-+(BOOL)playWithString:(NSString *)file;
-+(BOOL)playWithData:(NSData *)data;
+@property (nonatomic, retain) AVAudioRecorder* recorder;
 
 +(SoundManager*)defaultManager;
 
 -(void)clearPlayIfNeeded;
+
+-(AVAudioPlayer *)playerWithData:(NSData*)data;
 
 @end
