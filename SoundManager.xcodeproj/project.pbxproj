@@ -1,0 +1,232 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E4D96015153D18A300EC8EDD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D96014153D18A300EC8EDD /* Foundation.framework */; };
+		E4D9601B153D18A300EC8EDD /* SoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D9601A153D18A300EC8EDD /* SoundManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E4D96011153D18A300EC8EDD /* libSoundManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSoundManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4D96014153D18A300EC8EDD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E4D96018153D18A300EC8EDD /* SoundManager-Prefix.pch */ = {isa = PBXFileReference; path = "SoundManager-Prefix.pch"; sourceTree = "<group>"; };
+		E4D96019153D18A300EC8EDD /* SoundManager.h */ = {isa = PBXFileReference; path = SoundManager.h; sourceTree = "<group>"; };
+		E4D9601A153D18A300EC8EDD /* SoundManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoundManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4D9600E153D18A300EC8EDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4D96015153D18A300EC8EDD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E4D96006153D18A300EC8EDD = {
+			isa = PBXGroup;
+			children = (
+				E4D96016153D18A300EC8EDD /* SoundManager */,
+				E4D96013153D18A300EC8EDD /* Frameworks */,
+				E4D96012153D18A300EC8EDD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E4D96012153D18A300EC8EDD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4D96011153D18A300EC8EDD /* libSoundManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4D96013153D18A300EC8EDD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4D96014153D18A300EC8EDD /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E4D96016153D18A300EC8EDD /* SoundManager */ = {
+			isa = PBXGroup;
+			children = (
+				E4D96019153D18A300EC8EDD /* SoundManager.h */,
+				E4D9601A153D18A300EC8EDD /* SoundManager.m */,
+				E4D96017153D18A300EC8EDD /* Supporting Files */,
+			);
+			path = SoundManager;
+			sourceTree = "<group>";
+		};
+		E4D96017153D18A300EC8EDD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E4D96018153D18A300EC8EDD /* SoundManager-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E4D9600F153D18A300EC8EDD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E4D96010153D18A300EC8EDD /* SoundManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4D9601E153D18A300EC8EDD /* Build configuration list for PBXNativeTarget "SoundManager" */;
+			buildPhases = (
+				E4D9600D153D18A300EC8EDD /* Sources */,
+				E4D9600E153D18A300EC8EDD /* Frameworks */,
+				E4D9600F153D18A300EC8EDD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoundManager;
+			productName = SoundManager;
+			productReference = E4D96011153D18A300EC8EDD /* libSoundManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4D96008153D18A300EC8EDD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "北京";
+			};
+			buildConfigurationList = E4D9600B153D18A300EC8EDD /* Build configuration list for PBXProject "SoundManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E4D96006153D18A300EC8EDD;
+			productRefGroup = E4D96012153D18A300EC8EDD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E4D96010153D18A300EC8EDD /* SoundManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4D9600D153D18A300EC8EDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4D9601B153D18A300EC8EDD /* SoundManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E4D9601C153D18A300EC8EDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E4D9601D153D18A300EC8EDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E4D9601F153D18A300EC8EDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/SoundManager.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SoundManager/SoundManager-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E4D96020153D18A300EC8EDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/SoundManager.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SoundManager/SoundManager-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4D9600B153D18A300EC8EDD /* Build configuration list for PBXProject "SoundManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4D9601C153D18A300EC8EDD /* Debug */,
+				E4D9601D153D18A300EC8EDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4D9601E153D18A300EC8EDD /* Build configuration list for PBXNativeTarget "SoundManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4D9601F153D18A300EC8EDD /* Debug */,
+				E4D96020153D18A300EC8EDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4D96008153D18A300EC8EDD /* Project object */;
+}
