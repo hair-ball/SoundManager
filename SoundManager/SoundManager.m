@@ -20,6 +20,7 @@ BOOL playWithData(NSData* data){
 
 @synthesize player = _player;
 @synthesize recorder = _recorder;
+@synthesize recordSettings = _recordSettings;
 
 +(SoundManager *)defaultManager{
     static SoundManager* soundManager;
@@ -39,6 +40,15 @@ BOOL playWithData(NSData* data){
     }
 }
 
+-(void)clearRecorderIfNeeded{
+    if (self.recorder) {
+        if ([self.recorder isRecording]) {
+            [self.recorder stop];
+        }
+        self.recorder = nil;
+    }
+}
+
 -(AVAudioPlayer *)playerWithData:(NSData *)data{
     [self clearPlayIfNeeded];
     if (self.player == nil) {
@@ -52,9 +62,22 @@ BOOL playWithData(NSData* data){
     return self.player;
 }
 
+-(AVAudioRecorder *)recorderWithURL:(NSURL *)url{
+    [self clearRecorderIfNeeded];
+    NSDictionary* settings = self.recordSettings ? self.recordSettings : defaultSettings;
+    NSError* error = nil;
+    AVAudioRecorder* recorder = [[AVAudioRecorder alloc] initWithURL:url settings:settings error:&error];
+    recorder.delegate = self;
+    [recorder prepareToRecord];
+    return recorder;
+}
+
 #pragma mark - delegate
 -(void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag{
     [player release];
+}
+-(void)audioRecorderDidFinishRecording:(AVAudioRecorder *)recorder successfully:(BOOL)flag{
+    [recorder release];
 }
 
 @end
