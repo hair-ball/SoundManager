@@ -2,7 +2,7 @@
 //  AppDelegate.h
 //  SoundManagerDemo
 //
-//  Created by 涛 魏 on 12-4-27.
+//  Created by undancer on 12-4-27.
 //  Copyright (c) 2012年 北京. All rights reserved.
 //
 
