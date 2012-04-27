@@ -7,12 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E4D5C9BB154A74D600960E1B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D5C9BA154A74D600960E1B /* UIKit.framework */; };
+		E4D5C9BC154A74D600960E1B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D96014153D18A300EC8EDD /* Foundation.framework */; };
+		E4D5C9BE154A74D600960E1B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D5C9BD154A74D600960E1B /* CoreGraphics.framework */; };
+		E4D5C9C4154A74D600960E1B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E4D5C9C2154A74D600960E1B /* InfoPlist.strings */; };
+		E4D5C9C6154A74D600960E1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D5C9C5154A74D600960E1B /* main.m */; };
+		E4D5C9CA154A74D600960E1B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D5C9C9154A74D600960E1B /* AppDelegate.m */; };
+		E4D5C9CD154A74D600960E1B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D5C9CC154A74D600960E1B /* ViewController.m */; };
+		E4D5C9D0154A74D600960E1B /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4D5C9CE154A74D600960E1B /* ViewController.xib */; };
+		E4D5C9DA154A788E00960E1B /* News_Flash.caf in Resources */ = {isa = PBXBuildFile; fileRef = E4D5C9D9154A788E00960E1B /* News_Flash.caf */; };
+		E4D5C9DD154A799B00960E1B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D96021153D18E300EC8EDD /* AVFoundation.framework */; };
+		E4D5C9DE154A79B000960E1B /* libSoundManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D96011153D18A300EC8EDD /* libSoundManager.a */; };
 		E4D96015153D18A300EC8EDD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D96014153D18A300EC8EDD /* Foundation.framework */; };
 		E4D9601B153D18A300EC8EDD /* SoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D9601A153D18A300EC8EDD /* SoundManager.m */; };
 		E4D96022153D18E300EC8EDD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D96021153D18E300EC8EDD /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E4D5C9B8154A74D600960E1B /* SoundManagerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundManagerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4D5C9BA154A74D600960E1B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E4D5C9BD154A74D600960E1B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E4D5C9C1154A74D600960E1B /* SoundManagerDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SoundManagerDemo-Info.plist"; sourceTree = "<group>"; };
+		E4D5C9C3154A74D600960E1B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E4D5C9C5154A74D600960E1B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E4D5C9C7154A74D600960E1B /* SoundManagerDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SoundManagerDemo-Prefix.pch"; sourceTree = "<group>"; };
+		E4D5C9C8154A74D600960E1B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E4D5C9C9154A74D600960E1B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E4D5C9CB154A74D600960E1B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E4D5C9CC154A74D600960E1B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E4D5C9CF154A74D600960E1B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		E4D5C9D9154A788E00960E1B /* News_Flash.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = News_Flash.caf; sourceTree = "<group>"; };
 		E4D96011153D18A300EC8EDD /* libSoundManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSoundManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4D96014153D18A300EC8EDD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E4D96018153D18A300EC8EDD /* SoundManager-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SoundManager-Prefix.pch"; sourceTree = "<group>"; };
@@ -22,6 +46,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E4D5C9B5154A74D600960E1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4D5C9DE154A79B000960E1B /* libSoundManager.a in Frameworks */,
+				E4D5C9DD154A799B00960E1B /* AVFoundation.framework in Frameworks */,
+				E4D5C9BB154A74D600960E1B /* UIKit.framework in Frameworks */,
+				E4D5C9BC154A74D600960E1B /* Foundation.framework in Frameworks */,
+				E4D5C9BE154A74D600960E1B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E4D9600E153D18A300EC8EDD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -34,10 +70,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E4D5C9BF154A74D600960E1B /* SoundManagerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E4D5C9C8154A74D600960E1B /* AppDelegate.h */,
+				E4D5C9C9154A74D600960E1B /* AppDelegate.m */,
+				E4D5C9CB154A74D600960E1B /* ViewController.h */,
+				E4D5C9CC154A74D600960E1B /* ViewController.m */,
+				E4D5C9CE154A74D600960E1B /* ViewController.xib */,
+				E4D5C9C0154A74D600960E1B /* Supporting Files */,
+			);
+			path = SoundManagerDemo;
+			sourceTree = "<group>";
+		};
+		E4D5C9C0154A74D600960E1B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E4D5C9D9154A788E00960E1B /* News_Flash.caf */,
+				E4D5C9C1154A74D600960E1B /* SoundManagerDemo-Info.plist */,
+				E4D5C9C2154A74D600960E1B /* InfoPlist.strings */,
+				E4D5C9C5154A74D600960E1B /* main.m */,
+				E4D5C9C7154A74D600960E1B /* SoundManagerDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		E4D96006153D18A300EC8EDD = {
 			isa = PBXGroup;
 			children = (
 				E4D96016153D18A300EC8EDD /* SoundManager */,
+				E4D5C9BF154A74D600960E1B /* SoundManagerDemo */,
 				E4D96013153D18A300EC8EDD /* Frameworks */,
 				E4D96012153D18A300EC8EDD /* Products */,
 			);
@@ -47,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				E4D96011153D18A300EC8EDD /* libSoundManager.a */,
+				E4D5C9B8154A74D600960E1B /* SoundManagerDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +119,8 @@
 			children = (
 				E4D96021153D18E300EC8EDD /* AVFoundation.framework */,
 				E4D96014153D18A300EC8EDD /* Foundation.framework */,
+				E4D5C9BA154A74D600960E1B /* UIKit.framework */,
+				E4D5C9BD154A74D600960E1B /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -91,6 +156,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		E4D5C9B7154A74D600960E1B /* SoundManagerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4D5C9D3154A74D600960E1B /* Build configuration list for PBXNativeTarget "SoundManagerDemo" */;
+			buildPhases = (
+				E4D5C9B4154A74D600960E1B /* Sources */,
+				E4D5C9B5154A74D600960E1B /* Frameworks */,
+				E4D5C9B6154A74D600960E1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoundManagerDemo;
+			productName = SoundManagerDemo;
+			productReference = E4D5C9B8154A74D600960E1B /* SoundManagerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 		E4D96010153D18A300EC8EDD /* SoundManager */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E4D9601E153D18A300EC8EDD /* Build configuration list for PBXNativeTarget "SoundManager" */;
@@ -130,11 +212,35 @@
 			projectRoot = "";
 			targets = (
 				E4D96010153D18A300EC8EDD /* SoundManager */,
+				E4D5C9B7154A74D600960E1B /* SoundManagerDemo */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		E4D5C9B6154A74D600960E1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4D5C9C4154A74D600960E1B /* InfoPlist.strings in Resources */,
+				E4D5C9D0154A74D600960E1B /* ViewController.xib in Resources */,
+				E4D5C9DA154A788E00960E1B /* News_Flash.caf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		E4D5C9B4154A74D600960E1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4D5C9C6154A74D600960E1B /* main.m in Sources */,
+				E4D5C9CA154A74D600960E1B /* AppDelegate.m in Sources */,
+				E4D5C9CD154A74D600960E1B /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E4D9600D153D18A300EC8EDD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -145,7 +251,55 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		E4D5C9C2154A74D600960E1B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4D5C9C3154A74D600960E1B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E4D5C9CE154A74D600960E1B /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4D5C9CF154A74D600960E1B /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		E4D5C9D1154A74D600960E1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SoundManagerDemo/SoundManagerDemo-Prefix.pch";
+				INFOPLIST_FILE = "SoundManagerDemo/SoundManagerDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E4D5C9D2154A74D600960E1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SoundManagerDemo/SoundManagerDemo-Prefix.pch";
+				INFOPLIST_FILE = "SoundManagerDemo/SoundManagerDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		E4D9601C153D18A300EC8EDD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -223,6 +377,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E4D5C9D3154A74D600960E1B /* Build configuration list for PBXNativeTarget "SoundManagerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4D5C9D1154A74D600960E1B /* Debug */,
+				E4D5C9D2154A74D600960E1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		E4D9600B153D18A300EC8EDD /* Build configuration list for PBXProject "SoundManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -239,6 +401,7 @@
 				E4D96020153D18A300EC8EDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

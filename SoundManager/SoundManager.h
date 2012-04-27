@@ -20,10 +20,13 @@
                         nil];
 
 BOOL playWithData(NSData* data);
+BOOL playWithUrl(NSURL* url);
+
 
 @interface SoundManager : NSObject<AVAudioPlayerDelegate,AVAudioRecorderDelegate>
 
-@property (nonatomic, retain) AVAudioPlayer* player;
+@property (nonatomic, assign) BOOL isPlaying;
+@property (nonatomic, assign) AVAudioPlayer* player;
 @property (nonatomic, retain) AVAudioRecorder* recorder;
 @property (nonatomic, retain) NSDictionary* recordSettings;
 
@@ -33,6 +36,8 @@ BOOL playWithData(NSData* data);
 -(void)clearRecorderIfNeeded;
 
 -(AVAudioPlayer *)playerWithData:(NSData*)data;
+-(AVAudioPlayer *)playerWithUrl:(NSURL*)url;
+
 -(AVAudioRecorder *)recorderWithURL:(NSURL*)url;
 
 @end

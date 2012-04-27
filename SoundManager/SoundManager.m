@@ -11,13 +11,24 @@
 BOOL playWithData(NSData* data){
     AVAudioPlayer* player = [[SoundManager defaultManager] playerWithData:data];
     if (player) {
-        return player.play;
+        [SoundManager defaultManager].isPlaying = YES;
+        return [player play];
+    }
+    return NO;
+}
+
+BOOL playWithUrl(NSURL* url){
+    AVAudioPlayer* player = [[SoundManager defaultManager] playerWithUrl:url];
+    if (player) {
+        [SoundManager defaultManager].isPlaying = YES;
+        return [player play];
     }
     return NO;
 }
 
 @implementation SoundManager
 
+@synthesize isPlaying = _isPlaying;
 @synthesize player = _player;
 @synthesize recorder = _recorder;
 @synthesize recordSettings = _recordSettings;
@@ -32,11 +43,10 @@ BOOL playWithData(NSData* data){
 }
 
 -(void)clearPlayIfNeeded{
-    if (self.player) {
-        if ([self.player isPlaying]) {
-            [self.player stop];
-        }
-        self.player = nil;
+    if (self.isPlaying) {
+        [self.player stop];
+        [self.player release];
+        self.isPlaying = NO;
     }
 }
 
@@ -51,14 +61,19 @@ BOOL playWithData(NSData* data){
 
 -(AVAudioPlayer *)playerWithData:(NSData *)data{
     [self clearPlayIfNeeded];
-    if (self.player == nil) {
-        NSError* error = nil;
-        AVAudioPlayer* player = [[AVAudioPlayer alloc] initWithData:data error:&error];
-        player.delegate = self;
-        [player prepareToPlay];
-        self.player = player;
-        [player release];
-    }
+    NSError* error = nil;
+    self.player = [[AVAudioPlayer alloc] initWithData:data error:&error];
+    self.player.delegate = self;
+    [self.player prepareToPlay];
+    return self.player;
+}
+
+-(AVAudioPlayer *)playerWithUrl:(NSURL *)url{
+    [self clearPlayIfNeeded];
+    NSError* error = nil;
+    self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
+    self.player.delegate = self;
+    [self.player prepareToPlay];
     return self.player;
 }
 
@@ -74,6 +89,7 @@ BOOL playWithData(NSData* data){
 
 #pragma mark - delegate
 -(void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag{
+    self.isPlaying = NO;
     [player release];
 }
 -(void)audioRecorderDidFinishRecording:(AVAudioRecorder *)recorder successfully:(BOOL)flag{
