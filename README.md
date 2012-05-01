@@ -1,1 +1,2 @@
-SoundManager
+##SoundManager
+这是一个关于声音播放与录音的库
